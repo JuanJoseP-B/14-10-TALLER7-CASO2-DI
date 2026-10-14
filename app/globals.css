@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-page: #F6E7D3;
+  --color-card: #FBEDEA;
+  --color-panel: #FDF3F1;
+  --color-surface: #FFFFFF;
+  --color-surface-tint: #FCE9E7;
+  --color-primary: #A3262F;
+  --color-primary-dark: #8A1E26;
+  --color-primary-soft: #F3D3D1;
+  --color-hero-from: #E8838A;
+  --color-hero-to: #A82A33;
+  --color-text-strong: #9E2A2B;
+  --color-text-body: #5B3A3A;
+  --color-text-muted: #8C7472;
+  --color-star: #E8A93B;
+  --color-border: #EBD3D0;
+  --color-white: #FFFFFF;
+
+  --radius-card: 36px;
+  --radius-xl: 48px;
+  --radius-lg: 24px;
+  --radius-md: 20px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 8px 24px rgba(163, 38, 47, 0.08);
+  --shadow-soft: 0 4px 14px rgba(163, 38, 47, 0.10);
+  --shadow-page: 0 20px 60px rgba(120, 60, 40, 0.12);
+
+  --font-sans: var(--font-poppins), sans-serif;
+  --font-display: var(--font-poppins), sans-serif;
+  --font-script: var(--font-dancing-script), cursive;
+}
+
+:root {
+  --page-bg: #F6E7D3;
+  --card-bg: #FBEDEA;
+  --panel-bg: #FDF3F1;
+  --surface: #FFFFFF;
+  --surface-tint: #FCE9E7;
+  --primary: #A3262F;
+  --primary-dark: #8A1E26;
+  --primary-soft: #F3D3D1;
+  --hero-from: #E8838A;
+  --hero-to: #A82A33;
+  --text-strong: #9E2A2B;
+  --text-body: #5B3A3A;
+  --text-muted: #8C7472;
+  --star: #E8A93B;
+  --border: #EBD3D0;
+  --white: #FFFFFF;
+}
+
+html, body {
+  background-color: var(--page-bg);
+  color: var(--text-body);
+  font-family: var(--font-poppins), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar hiding utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
